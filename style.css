@@ -40,7 +40,7 @@ body {
     margin-left: 10px;
     padding: 5px 15px 5px 15px;
     -moz-appearance: none;
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     appearance: none;
 }
 
@@ -66,14 +66,14 @@ body {
 }
 
 /* should not transform when moving cursor on it */
-.showcase .seat:not(.occupied):hover{
+.showcase .seat:not(.occupied):hover {
     cursor: default;
     transform: scale(1);
 }
 
 .showcase {
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 5px   15px;
+    padding: 5px 15px;
     border-radius: 5px;
     color: #777;
     list-style-type: none;
@@ -94,11 +94,11 @@ body {
 }
 
 /* drawing a white screen  */
-.screen{
+.screen {
     background-color: #fff;
     height: 70px;
     width: 100%;
-    margin: 15px 0 ;
+    margin: 15px 0;
     transform: rotateX(-45deg);
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
 }
