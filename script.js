@@ -6,6 +6,15 @@ const movieSelect = document.getElementById("movie");
 // adding + to convert string to number
 let ticketPrice = +movieSelect.value;
 
+
+function updateSelectedCount() {
+const selectedSeats = document.querySelectorAll('.row .seat.selected')
+  const selectedSeatsCount = selectedSeats.length;
+
+  count.innerText = selectedSeatsCount;
+  total.innerText = selectedSeatsCount*ticketPrice;
+}
+
 // click event
 containter.addEventListener("click", (e) => {
   //   condition to select only empty seats
@@ -16,4 +25,6 @@ containter.addEventListener("click", (e) => {
     //   select and deselect die empty seats
     e.target.classList.toggle("selected");
   }
+
+  updateSelectedCount();
 });
